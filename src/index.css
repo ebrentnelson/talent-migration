@@ -1,0 +1,72 @@
+/* ============================================================
+   DESIGN TOKENS
+   Athletic + academic: varsity navy, paper, track-lane gold.
+   ============================================================ */
+:root {
+  --navy:        #14213d;  /* deep track/varsity navy   */
+  --navy-soft:   #24344f;  /* raised surfaces on navy    */
+  --paper:       #faf9f6;  /* off-white academic paper   */
+  --paper-warm:  #f2efe8;  /* alternating section band   */
+  --ink:         #1c2333;  /* body text                  */
+  --ink-soft:    #4a5568;  /* secondary text             */
+  --gold:        #c8963e;  /* lane / accent gold         */
+  --gold-deep:   #a67a2c;  /* gold on hover              */
+  --crimson:     #8b2635;  /* data highlight             */
+  --line:        #d9d4c8;  /* hairline rules             */
+
+  --display: "Oswald", system-ui, sans-serif;
+  --body:    "Source Serif 4", Georgia, serif;
+  --mono:    "JetBrains Mono", ui-monospace, monospace;
+
+  --maxw: 1080px;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation: none !important; transition: none !important; }
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 1.075rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--display);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+p { margin: 0 0 1.1rem; }
+a { color: var(--crimson); }
+
+img { max-width: 100%; display: block; }
+
+/* Eyebrow / lane label used above headings */
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin: 0 0 0.75rem;
+}
+
+/* Focus visibility (accessibility floor) */
+:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
