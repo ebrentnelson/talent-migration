@@ -1,34 +1,46 @@
 /* ============================================================
    DESIGN TOKENS
-   Athletic + academic: varsity navy, paper, track-lane gold.
+   Olympic Blue + Electric Orange: modern collegiate palette.
    ============================================================ */
 :root {
-  --navy:        #14213d;  /* deep track/varsity navy   */
-  --navy-soft:   #24344f;  /* raised surfaces on navy    */
-  --paper:       #faf9f6;  /* off-white academic paper   */
-  --paper-warm:  #f2efe8;  /* alternating section band   */
-  --ink:         #1c2333;  /* body text                  */
-  --ink-soft:    #4a5568;  /* secondary text             */
-  --gold:        #c8963e;  /* lane / accent gold         */
-  --gold-deep:   #a67a2c;  /* gold on hover              */
-  --crimson:     #8b2635;  /* data highlight             */
-  --line:        #d9d4c8;  /* hairline rules             */
+  --navy: #004a7c; /* Olympic blue backgrounds   */
+  --navy-soft: #0b6ead; /* raised surfaces on blue    */
+  --paper: #fafbfd; /* cool-toned white           */
+  --paper-warm: #eff2f7; /* cool gray alternating band */
+  --ink: #111827; /* body text (cool dark)      */
+  --ink-soft: #506378; /* secondary text (steel)     */
+  --gold: #ff5a09; /* primary accent (orange)    */
+  --gold-deep: #d94e00; /* accent hover / deeper      */
+  --crimson: #c43e00; /* data highlight (burnt)     */
+  --line: #d0d7e2; /* cool gray hairlines        */
 
-  --display: "Oswald", system-ui, sans-serif;
-  --body:    "Source Serif 4", Georgia, serif;
-  --mono:    "JetBrains Mono", ui-monospace, monospace;
+  --display: 'Oswald', system-ui, sans-serif;
+  --body: 'Source Serif 4', Georgia, serif;
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
 
   --maxw: 1080px;
   --gutter: clamp(1.25rem, 4vw, 3rem);
 }
 
-*, *::before, *::after { box-sizing: border-box; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 62px;
+}
 
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  * { animation: none !important; transition: none !important; }
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
 }
 
 body {
@@ -42,7 +54,10 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--display);
   font-weight: 600;
   line-height: 1.05;
@@ -50,10 +65,17 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 
-p { margin: 0 0 1.1rem; }
-a { color: var(--crimson); }
+p {
+  margin: 0 0 1.1rem;
+}
+a {
+  color: var(--crimson);
+}
 
-img { max-width: 100%; display: block; }
+img {
+  max-width: 100%;
+  display: block;
+}
 
 /* Eyebrow / lane label used above headings */
 .eyebrow {
