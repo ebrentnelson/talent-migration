@@ -272,7 +272,9 @@ export const TREND_DATA = [
 export const IMPACTS = [
   {
     who: 'Athletes',
-    body: '[Dummy] Opportunity, education, and mobility set against eligibility-driven recruitment, identity, and belonging.',
+    body: `
+      While international players get additional access to funds, education, and opportunities to compete, athletes who attend hi.
+    `,
   },
   {
     who: 'Coaches',
@@ -287,7 +289,7 @@ export const IMPACTS = [
     body: '[Dummy] Questions of representation, local pipelines, and who the team is understood to belong to.',
   },
   {
-    who: 'Governing Bodies',
+    who: 'Teams',
     body: '[Dummy] Eligibility rules, age limits, and policy responses to the flow of talent.',
   },
   {

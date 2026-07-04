@@ -514,10 +514,9 @@ export default function App() {
       <section className="section section--band" id="impact">
         <div className="wrap">
           <SectionHead lane="04" title="Real-World Impact" />
-          <div className="grid-3">
+          <div className="grid-2">
             {IMPACTS.map(i => (
               <article className="card" key={i.who}>
-                <span className="tag">Stakeholder</span>
                 <h3>{i.who}</h3>
                 <p>{i.body}</p>
               </article>
