@@ -86,12 +86,6 @@ function Nav({ active }) {
 
 export default function App() {
   const active = useScrollSpy(NAV_ITEMS.map(n => n.id))
-  const [paperMode, setPaperMode] = useState(false)
-
-  useEffect(() => {
-    document.body.classList.toggle('paper-mode', paperMode)
-    return () => document.body.classList.remove('paper-mode')
-  }, [paperMode])
 
   return (
     <>
@@ -210,7 +204,7 @@ export default function App() {
           <SectionHead lane="03" title="Evidence & Research" />
 
           {/* Results table — full width */}
-          <div style={{ marginBottom: '2rem' }}>
+          <div style={{ marginBottom: '4rem' }}>
             <h3
               style={{
                 color: 'var(--navy)',
@@ -522,16 +516,6 @@ export default function App() {
               </article>
             ))}
           </div>
-          <div
-            className="prose"
-            style={{ marginTop: '2.5rem', maxWidth: '72ch' }}
-          >
-            <p className="note">
-              [Dummy text] Close with implications for decision-making,
-              leadership, and policy: scholarship allocation, eligibility rules,
-              and how governing bodies might respond.
-            </p>
-          </div>
         </div>
       </section>
 
@@ -545,20 +529,41 @@ export default function App() {
                 What does this case reveal about sport as a social institution?
               </p>
               <p>
-                [Dummy text] Reflect on how the pipeline exposes the structure
-                of opportunity in global sport — who is granted mobility, on
-                whose terms, and what that says about sport's promise of
-                meritocracy.
+                Sport mirrors the global economic structure. While one might
+                naively assume that success in sport is based on merit and
+                ability alone, it does not exist that way. Those with the most
+                athletic talent now flow into the schools and organizations with
+                the most wealth which make those organizations more wealthy and
+                leave the athletes' previous country or team weaker and less
+                talented.
+              </p>
+              <p>
+                Ultimately sport is a market. This is more the case now than
+                ever in college sports because of recent changes to NIL and
+                scholarship regulation. Athletes and performance are an
+                investment that is paid for with scholarships, education,
+                playing time, and exposure. The desired return on investment is
+                wins, rankings, added real revenue.
+              </p>
+              <p>
+                Again, sport tells the story that anyone can rise to the top on
+                merit alone. However, that is not the case as so many young
+                athletes will lose the chance to develop their full potential
+                because a wealth of already established, mature potential exists
+                to be purchased elsewhere. The ideology of sport and the
+                structural reality do not align because there is a gap between
+                who gets recruited and on what terms.
+              </p>
+              <p>
+                Ultimately, this case shows that sport is a social institution
+                that is not separate from broader structures of power, economy,
+                and inequality, but, rather, very much deeply entwined with
+                those things.
               </p>
             </div>
             <div className="prose">
               <p className="lead">Who benefits, who is disadvantaged?</p>
-              <p>
-                [Dummy text] Weigh the exploitation-versus-opportunity tension:
-                athlete agency and education and remittances on one side;
-                eligibility-driven recruitment, displaced domestic runners, and
-                extraction from sending nations on the other.
-              </p>
+              <p>asdas</p>
               <p>
                 <strong style={{ fontFamily: 'var(--display)', color: '#fff' }}>
                   Ethical issues ·{' '}
@@ -597,17 +602,6 @@ export default function App() {
         <div className="wrap">
           <span>Imported Talent · A Case Study in Global Sport Migration</span>
           <span>
-            <a
-              href="#"
-              onClick={e => {
-                e.preventDefault()
-                setPaperMode(p => !p)
-                window.scrollTo({ top: 0 })
-              }}
-            >
-              {paperMode ? 'View as Website' : 'View as Paper'}
-            </a>
-            {' · '}
             <a href="#home">Back to top ↑</a>
           </span>
         </div>

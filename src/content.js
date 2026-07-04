@@ -273,28 +273,58 @@ export const IMPACTS = [
   {
     who: 'Athletes',
     body: `
-      While international players get additional access to funds, education, and opportunities to compete, athletes who attend hi.
+      While international athletes get additional access to funds, education, 
+      and opportunities to compete (Chepyator-Thomson & Ariyo, 2016; Simiyu 
+      Njororai, 2010), it means that less American athletes will.
+      International athletes are also vulnerable as they may not be completely
+      acclimated to living abroad, their visas are limited, and they may 
+      simply struggle with identity and belonging issues (Darby et al., 2007; 
+      Simiyu Njororai, 2010).
     `,
   },
   {
-    who: 'Coaches',
-    body: '[Dummy] Recruiting incentives, roster strategy, and the pressure to win reshaping how programs are built.',
-  },
-  {
-    who: 'Administrators',
-    body: '[Dummy] Scholarship allocation, compliance, and the optics of team composition.',
+    who: 'Coaches/Administrators',
+    body: `
+      An increase in international athletes requires a stronger need for 
+      cultural intelligence and leadership in order to support athletes 
+      coming from a wide range of backgrounds. Building a reliance on 
+      international recruiting and team building can change in the future
+      with possible NCAA regulation in the future. Coaching and 
+      administrating a mixed team of athletes with different world views
+      can be challenging.
+    `,
   },
   {
     who: 'Fans & Community',
-    body: '[Dummy] Questions of representation, local pipelines, and who the team is understood to belong to.',
+    body: `
+      The addition of international athletes means the addition of 
+      international fans. However, American fans may feel disconnected
+      from foreign athletes if they are not properly introduced to them
+      and have the opportunity to learn about who they are, where they are 
+      from and what their background is. The possible disconnect may 
+      fracture bonds between fans and the team if not handled properly.
+    `,
   },
   {
     who: 'Teams',
-    body: '[Dummy] Eligibility rules, age limits, and policy responses to the flow of talent.',
+    body: `
+      Team building is already problematic due to the transfer portal.
+      Having a mixed team of American and international athletes requires
+      time for athletes to get acquainted with each other and to build
+      meaningful relationships so they can effectively function as a 
+      team. This may be difficult with limited time so it must be 
+      prioritized.
+    `,
   },
   {
     who: 'Sending Nations',
-    body: '[Dummy] Loss of homegrown talent weighed against remittances, exposure, and development.',
+    body: `
+      The home nations of these athletes lose them to the recruiting 
+      nations (or the "core" in world-systems terminology) 
+      (Chepyator-Thomson & Ariyo, 2016; Darby et al., 2007; Simiyu 
+      Njororai, 2010). This results in weaker readily available talent,
+      national teams, and human capital in general.
+    `,
   },
 ]
 
