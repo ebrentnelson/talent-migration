@@ -563,19 +563,48 @@ export default function App() {
             </div>
             <div className="prose">
               <p className="lead">Who benefits, who is disadvantaged?</p>
-              <p>asdas</p>
+              <p>
+                On one hand, given the right conditions, international athletes
+                can benefit tremendously, turning their athletic talents into
+                education, monetary profit, and potentially a professional
+                career. But these benefits don't come without challenges.
+                Less-than-ideal conditions can leave international athletes at a
+                disadvantage: the burden of leaving the home they know, learning
+                a new language, and adjusting to a new culture surrounded by
+                strangers. They are also assigned performance standards they
+                must meet, or else their value to their sponsoring school
+                decreases.
+              </p>
+              <p>
+                On the other hand, there is little upside for American athletes.
+                Limited rosters filled with experienced international athletes
+                leave little room for those hoping to compete at the collegiate
+                level. The increase in international athletes at the Division I
+                level pushes competition down to lower divisions, ultimately
+                squeezing out developing athletes who might otherwise compete at
+                a school where they can also receive a challenging education.
+              </p>
               <p>
                 <strong style={{ fontFamily: 'var(--display)', color: '#fff' }}>
                   Ethical issues ·{' '}
                 </strong>
-                [Dummy text] fairness, consent, commodification of the body.
+                Coaches and institutions need to commit to supporting
+                international athletes even when they do not meet the high
+                standards set for them. While athletic talent has been shown to
+                be a commodity that can be traded for educational and monetary
+                benefits, we must remember that we are ultimately dealing with
+                human beings, who should not be defined by their athletic
+                ability alone.
               </p>
               <p>
                 <strong style={{ fontFamily: 'var(--display)', color: '#fff' }}>
                   Future ·{' '}
                 </strong>
-                [Dummy text] how NIL, rule changes, and global development might
-                reshape the flow.
+                The ability to continue supporting rosters with large numbers of
+                international athletes is fully contingent on NCAA regulations.
+                Even minor changes to roster sizes, eligibility standards, or
+                NIL/profit sharing could have a huge impact on the future of
+                international athletes competing at American universities.
               </p>
             </div>
           </div>
