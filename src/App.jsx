@@ -73,6 +73,7 @@ function Nav({ active }) {
               <a
                 href={`#${item.id}`}
                 className={active === item.id ? 'active' : ''}
+                onClick={() => setOpen(false)}
               >
                 {item.label}
               </a>

@@ -159,6 +159,7 @@
     padding: 0.85rem var(--gutter);
     border-radius: 0;
     border-top: 1px solid var(--navy-soft);
+    display: block;
   }
   .nav__links a.active {
     background: var(--navy-soft);
